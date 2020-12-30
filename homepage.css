@@ -1,0 +1,557 @@
+ /* #####@@@@@##### DEFAULTS ######@@@@@@###### */
+ body {
+    margin: 0;
+    background-color: #323232 !important;
+    font-family: 'Aleo', serif;
+}
+
+
+/* #####@@@@@##### NAVIGATION BAR ######@@@@@@###### */
+nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: #2c6ab5;
+    z-index: 9;
+}
+
+.nav-content-wrap {
+    width: 100%;
+    max-height: 75px;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #68a9f5;
+}
+
+div.logo-on-nav-wrap {
+    width: 80px;
+    height: 75px;
+    font-size: 26px;
+    margin-left: 30px;
+}
+
+.logo-on-nav {
+    height: 70px;
+    margin: 2px 0 0 -5px;
+}
+
+.logo-on-nav:hover,
+.likes-wrap i {
+    cursor: pointer;
+}
+
+.flex-direction-row,
+.logo-and-search-wrap,
+.user-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.test {
+    border: 1px solid black;
+}
+
+.search-bar-wrap {
+    margin-left: 50px;
+    height: 75px;
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-bar {
+    position: relative;
+    height: 40px;
+    width: 400px;
+    border-radius: 4px;
+    background-color: #67a9f5;
+}
+
+.search-input {
+    padding: 0 0 0 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 0px solid black;
+    border-radius: 4px;
+    z-index: 9;
+    background-color: rgba(175, 175, 175, 0);
+    font-size: 22px;
+    color: black;
+}
+
+.search-input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.search-input:focus::placeholder {
+    color: #5a5e60;
+}
+
+.search-bar .fa {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.fa-search {
+    color: #fff;
+}
+
+input {
+    outline: none;
+}
+
+.user-options {
+    width: 350px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.individual-option-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.individual-option-wrap a {
+    color: black;
+    margin-top: -5px;
+}
+
+.icon-wrap {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.icon-wrap .fa {
+    font-size: 40px;
+}
+
+.fa-list-alt {
+    margin-top: 5px;
+}
+
+.fa-envelope-o {
+    margin-top: 2px;
+}
+
+.icon-wrap:hover {
+    cursor: pointer;
+}
+
+.drop-down-wrap {
+    display: none;
+}
+
+.create-post-option {
+    border-radius: 4px;
+}
+
+.create-post-option div {
+    height: 43px;
+    border-radius: 4px;
+    min-width: 65px;
+    background-color: #68a9f5;
+    margin-bottom: 8px;
+}
+
+/* #####@@@@@##### DISPLAY SECTION ######@@@@@@###### */
+.header-section {
+    background-image: url('https://cdn.glitch.com/ede46f42-b5b9-48ad-8d72-f38482566cde%2Ffresno-lg.png?v=1567219229502');
+    background-size: cover;
+    background-color: #68a9f5;
+    min-height: 600px;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo-text {
+    padding-top: 100px;
+    font-family: 'Aleo', serif;
+    color: white;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+}
+
+.logo-text span {
+    font-weight: bold;
+}
+
+.slogan-text {
+    font-family: 'Aleo', serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+}
+
+.header-options-wrap {
+    position: absolute;
+    width: 600px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    bottom: 100px;
+}
+
+.purpose-header p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 900;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.header-button-wrap {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.header-button-wrap button {
+    padding: 10px 16px;
+    border-radius: 0;
+    font-size: 17px;
+    width: 75%;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #667;
+}
+
+/* @@@@@#####@@@@@ TESTIMONY SECTION @@@@@#####@@@@@ */
+.reviews {
+    background-color: white;
+}
+
+.hashtag-wrap {
+    text-align: center;
+    color: #265988;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.hashtag-wrap h1 {
+    margin: 0;
+    font-weight: 300;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.reviews-wrap,
+.individual-review,
+.profile-image-col,
+.profile-name-wrap,
+.info-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.reviews-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+}
+
+.individual-review {
+    height: 200px;
+    max-width: 400px;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.profile-image-col {
+    align-items: center;
+    height: auto;
+    width: 100px;
+}
+
+.profile-image-col img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px grey;
+    margin-top: -30px;
+}
+
+.review-content-col {
+    width: 80%;
+}
+
+.name-wrap {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.name-wrap p {
+    font-weight: bold;
+    margin: 0 10px 0 0;
+}
+
+.name-wrap span {
+    font-size: 12px;
+    color: #667;
+    margin-top: 5px;
+}
+
+.review-tweet-wrap p {
+    margin: 5px 0 0 0;
+}
+
+.review-tweet-wrap span {
+    color: #265988;
+}
+
+.review-tweet-wrap span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* #####@@@@@###### INFORMATION SECTION #####@@@@@##### */
+.info-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #323232;
+    position: relative;
+}
+
+.info-anchor {
+    position: absolute;
+    top: -70px;
+}
+
+.info-type-wrap {
+    max-width: 400px;
+    min-height: 200px;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.info-img-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.info-img-wrap img {
+    width: 100px;
+    height: 100px;
+    margin-top: 35px;
+}
+
+.info-header-wrap {
+    height: auto;
+}
+
+.info-header-wrap h6 {
+    text-align: center;
+    margin: 20px 0;
+    color: #68a9f5;
+    font-size: 24px;
+    font-family: 'Aleo', serif;
+}
+
+.info-content-wrap {
+    height: auto;
+}
+
+.info-content-wrap p {
+    color: whitesmoke;
+    width: 80%;
+    margin: 10px auto;
+    height: auto;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.info-button-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 40px 0;
+}
+
+.info-button-wrap button {
+    padding: 10px 16px;
+    border-radius: 0;
+    font-size: 17px;
+    width: 250px;
+}
+
+/* #####@@@@@##### FOOTER #####@@@@@##### */
+footer {
+    background-color: #2c6ab5;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+footer i {
+    color: #faf334;
+    padding-left: 3px;
+}
+
+.social-media i {
+    color: #007bff;
+}
+
+.social-media i:hover {
+    color: #0056b3;
+}
+
+
+
+/* #####@@@@@#####        ######@@@@@@###### */
+/* #####@@@@@##### MOBILE ######@@@@@@###### */
+/* #####@@@@@#####        ######@@@@@@###### */
+@media screen and (max-width: 1000px) {
+
+    /* #####@@@@@##### NAVIGATION BAR ######@@@@@@###### */
+
+    .user-options {
+        width: 90px;
+        flex-direction: column;
+        border: 0;
+        border-radius: 9px;
+        background-color: #2c6ab5;
+    }
+
+    .dropped-options {
+        height: 400px;
+        margin-top: -1px;
+    }
+
+    .dropped-options .drop-down-wrap div {
+        margin-top: -4px;
+    }
+
+    div.do-flex {
+        display: flex;
+    }
+
+    .individual-option-wrap {
+        display: none;
+        margin-right: 0;
+    }
+
+    .drop-down-wrap {
+        display: flex;
+    }
+
+    /* #####@@@@@##### DISPLAY SECTION ######@@@@@@###### */
+    .header-section {
+        background-image: url('https://cdn.glitch.com/ede46f42-b5b9-48ad-8d72-f38482566cde%2Ffresno.png?v=1567219235354');
+    }
+
+    .logo-text {
+        font-size: 5rem;
+    }
+
+    .purpose-header {
+        display: none;
+    }
+
+    .header-options-wrap {
+        width: 100%;
+        bottom: 70px;
+    }
+
+    .header-button-wrap {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header-button-wrap button {
+        width: 250px;
+    }
+
+    /* #####@@@@@##### REVIEWS SECTION ######@@@@@@###### */
+    .reviews-wrap {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .individual-review {
+        margin: 10px auto;
+        width: 80%;
+        max-width: none;
+        height: auto;
+    }
+
+    .name-wrap {
+        margin-top: 15px;
+    }
+
+    .profile-image-col img {
+        margin-top: 20px;
+    }
+
+    /* #####@@@@@###### INFORMATION SECTION #####@@@@@##### */
+    .info-type-wrap {
+        width: 80%;
+        max-width: none;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    /* #####@@@@@##### NAVIGATION BAR ######@@@@@@###### */
+
+    .search-bar-wrap {
+        margin-left: 20px;
+    }
+
+    /* #####@@@@@###### INFORMATION SECTION #####@@@@@##### */
+    .info-type-wrap {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    /* #####@@@@@##### NAVIGATION BAR ######@@@@@@###### */
+
+    div.logo-on-nav-wrap {
+        margin-left: 10px;
+    }
+
+    .search-bar-wrap {
+        margin-left: 10px;
+        width: 45vw;
+        display: none;
+    }
+}
+
+
+.test {
+    border: 1px solid black;
+}

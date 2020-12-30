@@ -1,0 +1,190 @@
+/* Detailed Comment */
+.pop-up {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    background-color: rgba(158, 158, 158, 0.667);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+}
+
+.remove-pop-up {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 6;
+    top: 100px;
+}
+
+.modal-remove {
+    top: 60px;
+}
+
+.remove-pop-up-btn-wrap {
+    width: 30px;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.remove-pop-up-btn-wrap:hover {
+    cursor: pointer;
+}
+
+.remove-pop-up-btn-wrap i {
+    font-size: 30px;
+}
+
+.sign-up-wrap {
+    width: 450px;
+    height: 550px;
+    background-color: #efefef;
+    padding: 8px 0;
+    border-radius: 4px;
+    position: sticky;
+    top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px 0px #a1a4a8;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px 0 10px 0;
+}
+
+.image-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+form {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.input-wrap {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-wrap input {
+    width: 90%;
+    height: 30px;
+    border: 1px solid white;
+    padding-left: 25px;
+}
+
+.sign-up-icon-wrap {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+
+button {
+    border-radius: 0px;
+}
+
+#files {
+    padding: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.fal:hover,
+.files {
+    cursor: pointer;
+}
+
+.files {
+    margin: 0;
+    padding: 2px 4px;
+}
+
+.files-btn {
+    padding: 0;
+}
+
+span.text-muted {
+    margin: -10px 0 15px 0;
+}
+
+/* Nav bar search functionality */
+.search-options-wrap {
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    top: 55px;
+    border-radius: 4px;
+    color: #5a5e60;
+    display: none;
+    box-shadow: 0px 5px 20px -8px grey;
+}
+
+.search-options {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-options:hover {
+    cursor: pointer;
+    background-color: #f3f3f3
+}
+
+.so-first {
+    border-radius: 4px 4px 0 0;
+}
+
+.so-end {
+    border-radius: 0 0 4px 4px;
+}
+
+.search-text {
+    width: 50%;
+    font-size: 18px;
+    margin-top: 8px;
+    padding-left: 15px;
+}
+
+.search-img {
+    width: 50%;
+}
+
+.search-img img {
+    margin-top: 5px;
+    height: 35px;
+    border-radius: 4px;
+    margin-left: 63%;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    /* Expands sign up and puts exit button inside the sign up */
+    .remove-pop-up-btn-wrap {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        z-index: 8;
+    }
+
+    .sign-up-wrap {
+        width: 100%;
+    }
+}
